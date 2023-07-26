@@ -1,0 +1,78 @@
+.homeContainer {
+    display: flex;
+    place-content: center;
+    margin-top: 100px;
+    min-width: 994px;
+
+    &__intro {
+        display: flex;
+        place-content: center;
+        margin-top: 80px;
+        width: 89%;
+        height: 800px;
+        background: url(https://static.wixstatic.com/media/15312d_8947a28f34a947c88e0eccf3d84f0f8e~mv2_d_3000_4500_s_4_2.jpg/v1/fill/w_507,h_800,fp_0.38_0.25,q_85,usm_0.66_1.00_0.01,enc_auto/15312d_8947a28f34a947c88e0eccf3d84f0f8e~mv2_d_3000_4500_s_4_2.jpg);
+        background-repeat: repeat-x;
+        background-size: 50% 120%;
+        background-position: left;
+
+        &__details {
+            display: flex;
+            flex-direction: column;
+            place-content: center;
+            background-color: white;
+            font-family: 'Montserrat', sans-serif;
+            width: 50%;
+
+            h1 {
+                color: #96C0E7;
+                display: flex;
+                flex-direction: column;
+                font-size: 72px;
+                margin-bottom: 40px;
+                margin-top: 0px;
+                gap: 20px;
+                font-weight: 300;
+                letter-spacing: -0.050em;
+            }
+
+            h3 {
+                font-size: 20px;
+                color: black;
+            }
+
+            p {
+                font-size: 15px;  
+                font-weight: 200;
+                color: black;
+                padding-left: 80px;
+                padding-right: 80px;
+            }
+
+            a {
+                place-self: center;
+                margin-top: 60px;
+                font-size: 15px;
+                border: 1px solid #96C0E7;
+                border-radius: 50px;
+                width: 100px;
+                padding: 10px;
+                color: #96C0E7;
+                transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                transition-duration: 400ms;
+            }
+            a:hover {
+                color: white;
+                background-color: #96C0E7;
+                cursor: pointer;
+            }
+        }
+
+        &__img {
+            background-color: transparent;
+            height: 800px;
+            width: 50%;
+            
+        }
+    }
+}
