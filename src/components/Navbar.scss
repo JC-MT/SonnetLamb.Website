@@ -12,8 +12,10 @@
     background-color: #FFFFFF;
 
     &__name {
-        flex-basis: 22%;
+        flex-basis: 25%;
         color: black;
+        text-align: left;
+        margin-left: 80px;
 
         a {
             color: black;
@@ -21,24 +23,29 @@
             font-size: 22px;
             font-weight: 300;
         }
-        :hover {
-            color: black;
+
+        a:hover{
+            cursor: pointer;
         }
     }
 
     &__links {
-        flex-basis: 37%;
+        flex-basis: 50%;
         display: flex;
-        place-content: center;
+        place-content: end;
+        margin-right: 70px;
 
         p {
             padding-left: 10px;
             padding-right: 10px;
             align-self: baseline;
-            font-size: 12px;
+            font-size: 13px;
             font-weight: 400;
             margin: auto;
             color: black;
+        }
+        :hover{
+            cursor: pointer;
         }
     }
 }

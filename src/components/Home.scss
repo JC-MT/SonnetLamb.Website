@@ -1,36 +1,40 @@
 .homeContainer {
     display: flex;
+    flex-direction: column;
     place-content: center;
     margin-top: 100px;
     min-width: 994px;
+    width: 88.5%;
+    background-color: transparent;
+    border-top: 80px solid #EFEFEF;
+    border-bottom: 80px solid #EFEFEF;
+    border-left: 300px solid #EFEFEF;
+    border-right: 300px solid #EFEFEF;
 
     &__intro {
         display: flex;
-        place-content: center;
-        margin-top: 80px;
-        width: 89%;
-        height: 800px;
-        background: url(https://static.wixstatic.com/media/15312d_8947a28f34a947c88e0eccf3d84f0f8e~mv2_d_3000_4500_s_4_2.jpg/v1/fill/w_507,h_800,fp_0.38_0.25,q_85,usm_0.66_1.00_0.01,enc_auto/15312d_8947a28f34a947c88e0eccf3d84f0f8e~mv2_d_3000_4500_s_4_2.jpg);
-        background-repeat: repeat-x;
-        background-size: 50% 120%;
-        background-position: left;
+        place-self: center;
+        width: 100%;
+        z-index: 1px;
 
         &__details {
             display: flex;
             flex-direction: column;
             place-content: center;
+            align-items: center;
             background-color: white;
+            text-align: center;
             font-family: 'Montserrat', sans-serif;
+            height: 800px;
             width: 50%;
 
             h1 {
                 color: #96C0E7;
                 display: flex;
                 flex-direction: column;
-                font-size: 72px;
-                margin-bottom: 40px;
+                font-size: 70px;
+                margin-bottom: 20px;
                 margin-top: 0px;
-                gap: 20px;
                 font-weight: 300;
                 letter-spacing: -0.050em;
             }
@@ -61,10 +65,10 @@
                 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
                 transition-duration: 400ms;
             }
+
             a:hover {
                 color: white;
                 background-color: #96C0E7;
-                cursor: pointer;
             }
         }
 
@@ -72,7 +76,57 @@
             background-color: transparent;
             height: 800px;
             width: 50%;
-            
+        }
+    }
+
+    &__contact {
+        display: flex;
+        padding-right: 80px;
+        padding-left: 80px;
+        width: 89%;
+        background-color: #EFEFEF;
+
+        &__img {
+            width: 50%;
+            height: 380px;
+        }
+        &__info {
+            display: flex;
+            flex-direction: column;
+            place-content: center;
+            background-color: #96C0E7;
+            width: 100%;
+            align-items: center;
+
+            h2 {
+                color: white;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 40px;
+                font-weight: 300;
+                letter-spacing: -0.020em;
+                margin: 0px;
+                margin-bottom: 10px;
+            }
+
+            a {
+                color: white;
+                font-weight: 200;
+                letter-spacing: 0.020em;
+                padding-bottom: 10px;
+
+            }
+            a:hover {
+                color: white;
+            }
+
+            &__socialmedia {
+                display: flex;
+                gap: 15px;
+
+                :hover {
+                    cursor: pointer;
+                }
+            }
         }
     }
 }

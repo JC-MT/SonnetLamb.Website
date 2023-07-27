@@ -1,0 +1,19 @@
+.footerContainer{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    height: 180px;
+    gap: 25px;
+
+    &__socialmedia {
+        display: flex;
+        gap:10px;
+        place-self: center;
+    }
+
+    &__copyrights {
+        font-size: 13px;
+        letter-spacing: 0.020em;
+        text-align: center;
+    }
+}
