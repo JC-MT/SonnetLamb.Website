@@ -11,7 +11,7 @@ export default function NavBar() {
         </div>
         <div className='navbarContainer__links'>
             <Link to={'/'}><p>Home</p></Link>
-            <Link to={'/'}><p>About</p></Link>
+            <Link to={'/about'}><p>About</p></Link>
             <Link to={'/'}><p>Gallery</p></Link>
             <Link to={'/'}><p>Reels</p></Link>
             <Link to={'/'}><p>News</p></Link>

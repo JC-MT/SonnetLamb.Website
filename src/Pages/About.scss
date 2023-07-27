@@ -1,0 +1,73 @@
+.aboutContainer{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+    margin-top: 100px;
+    background-color: #EFEFEF;
+    padding: 40px;
+
+    &__img {
+        height: 400px;
+        width: 400px;
+        place-self: center;
+        border-radius: 100%;
+    }
+
+    &__bio {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        place-self: center;
+        padding: 10px;
+
+        h3 { 
+            font-size: 40px;
+            letter-spacing: 0.020em;
+            font-weight: 300;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0px;
+            padding: 5px;
+        }
+
+        h4 {
+            font-size: 20px;
+            font-weight: 300;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0px;
+            padding: 5px;
+        }
+
+        p {
+            width: 60%;
+            font-size: 14px;
+            opacity: 0.5;
+            font-weight: 100;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: left;
+
+            span{
+                font-style: italic;
+            }
+        }
+    }
+    a {
+        place-self: center;
+        margin-top: 20px;
+        font-size: 15px;
+        border: 1px solid #181818;
+        border-radius: 50px;
+        width: 180px;
+        padding: 10px;
+        color: #181818;
+        transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 400ms;
+    }
+
+    a:hover {
+        color: white;
+        background-color: #181818;
+    }
+}

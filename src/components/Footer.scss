@@ -4,11 +4,16 @@
     place-content: center;
     height: 180px;
     gap: 25px;
+    background-color: #EFEFEF;
 
     &__socialmedia {
         display: flex;
         gap:10px;
         place-self: center;
+
+        a:hover {
+            cursor: pointer;
+        }
     }
 
     &__copyrights {
