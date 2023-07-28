@@ -10,6 +10,7 @@ import About from './Pages/About'
 import Contact from './Pages/Contact'
 import Productions from './Pages/Productions'
 import Media from './Pages/Media'
+import Gallery from './Pages/Gallery'
 
 export default function App() {
   const [scrollTop, setScrollTop] = useState(0);
@@ -54,7 +55,7 @@ export default function App() {
       <main>
         <Routes>
           <Route path="/about" element={<About/>} />
-          {/* <Route path="/gallery" element={<Gallery/>} /> */}
+          <Route path="/gallery" element={<Gallery/>} />
           <Route path="/media" element={<Media/>} />
           <Route path="/productions" element={<Productions/>} />
           <Route path="/contact" element={<Contact/>} />

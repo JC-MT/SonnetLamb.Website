@@ -1,0 +1,27 @@
+.galleryContainer {
+    margin-top: 100px;
+    padding: 75px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    background-color: #EFEFEF;
+
+    &__carousel::-webkit-scrollbar {
+        display: none; //for Chrome, Safa
+    }
+
+    &__carousel {
+        display: flex;
+        gap: 25px;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-snap-stop: always;
+        -ms-overflow-style: none; /* for Internet Explorer, Edge */
+        scrollbar-width: none; /* for Firefox */
+
+        &__imgContainer {
+            scroll-snap-align: center;
+        }
+    }
+}
