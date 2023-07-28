@@ -14,7 +14,7 @@ export default function NavBar() {
             <Link to={'/'}><p>Home</p></Link>
             <Link to={'/about'}><p>About</p></Link>
             <Link to={'/'}><p>Gallery</p></Link>
-            <Link to={'/'}><p>Reels</p></Link>
+            <Link to={'/media'}><p>Reels</p></Link>
             <Link to={'/productions'}><p>News</p></Link>
             <Link to={'/contact'}><p>Contact</p></Link>
         </div>
