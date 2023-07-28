@@ -2,12 +2,13 @@ import { useState, useLayoutEffect } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import './App.css'
 
-// Components
+// Components & Pages
 import NavBar from './components/Navbar'
 import Home from './components/Home'
 import Footer from './components/Footer'
 import About from './Pages/About'
 import Contact from './Pages/Contact'
+import Productions from './Pages/Productions'
 
 export default function App() {
   const [scrollTop, setScrollTop] = useState(0);
@@ -53,8 +54,8 @@ export default function App() {
         <Routes>
           <Route path="/about" element={<About/>} />
           {/* <Route path="/gallery" element={<Gallery/>} />
-          <Route path="/media" element={<Media/>} />
-          <Route path="/productions" element={<Productions/>} /> */}
+          <Route path="/media" element={<Media/>} /> */}
+          <Route path="/productions" element={<Productions/>} />
           <Route path="/contact" element={<Contact/>} />
         </Routes>
       </main>
