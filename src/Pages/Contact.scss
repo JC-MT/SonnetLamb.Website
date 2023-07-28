@@ -1,0 +1,163 @@
+.contactContainer {
+    display: flex;
+    place-self: center;
+    place-content: center;
+    margin-top: -200px;
+    background-color: #EFEFEF;
+    width: 100vw;
+
+    &__img {
+        height: 50%;
+        width: 50%;
+    }
+
+    &__form {
+        margin-top: 200px;
+        width: 50%;
+        display: flex;
+        place-self: center;
+        flex-direction: column;
+        place-items: center;
+        color: #181818;
+        gap: 10px;
+
+        h2 {
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 40px;
+            font-weight: 300;
+            letter-spacing: 0.005em;
+            margin: 0px;
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: black;
+            font-weight: 200;
+            letter-spacing: 0.020em;
+            padding-bottom: 10px;
+
+        }
+
+        a:hover {
+            cursor: pointer;
+        }
+
+        &__fullname {
+            display: flex;
+            width: 460px;
+            font-size: 20px;
+
+            input::placeholder{
+                font-size: 14px;
+                color: black;
+                font-weight: 400;
+                font-family: 'Montserrat', sans-serif;
+                letter-spacing: -0.2px;
+            }
+
+            &__first {
+                width: 210px;
+                height: 35px;
+                padding: 3px;
+                padding-left: 12px;
+                font-weight: 100;
+                border-width: 0 0 1px;
+                border-color: black;
+                background-color: #EFEFEF;
+                outline: none;
+
+                &:hover,
+                &:focus {
+                    border-width: 1px 1px 1px 1px;
+                }
+            }
+
+            &__last {
+                width: 210px;
+                height: 35px;
+                padding: 3px;
+                padding-left: 12px;
+                font-weight: 100;
+                margin-left: 10px;
+                border-width: 0 0 1px;
+                border-color: black;
+                background-color: #EFEFEF;
+                outline: none;
+                &:hover,
+                &:focus {
+                    border-width: 1px 1px 1px 1px;
+                }
+            }
+        }
+
+        input::placeholder,
+        textarea::placeholder{
+            font-size: 14px;
+            color: black;
+            font-weight: 400;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: -0.2px;
+        }
+
+        &__subject {
+            width: 445px;
+            height: 35px;
+            padding: 3px;
+            padding-left: 12px;
+            font-weight: 400;
+            border-width: 0 0 1px;
+            border-color: black;
+            background-color: #EFEFEF;
+            outline: none;
+
+            &:hover,
+            &:focus {
+                border-width: 1px 1px 1px 1px;
+            }
+        }
+
+        &__message {
+            width: 434px;
+            height: 110.75px;
+            place-content: start;
+            padding-top: 11.25px;
+            padding-right: 10px;
+            padding-bottom: 3px;
+            padding-left: 16px;
+            font-weight: 400;
+            border-width: 0 0 1px;
+            border-color: black;
+            background-color: #EFEFEF;
+            font-family: 'Montserrat', sans-serif;
+            outline: none;
+            resize: none;
+
+            &:hover,
+            &:focus {
+                border-width: 1px 1px 1px 1px;
+            }
+        }
+
+        &__button {
+            place-self: center;
+            margin-top: 25px;
+            font-size: 15px;
+            height: 50px;
+            background-color: #181818;
+            border-color: black;
+            width: 460px;
+            padding: 10px;
+            color: white;
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 400ms;
+            outline: none;
+        
+            &:hover {
+                opacity: .5;
+                cursor: pointer;
+            }
+        }
+    }
+}
