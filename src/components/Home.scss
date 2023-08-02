@@ -1,21 +1,20 @@
 .homeContainer {
+    overscroll-behavior-y: none;
     display: flex;
     flex-direction: column;
-    place-content: center;
     margin-top: 100px;
+    gap: 80px;
+    width: 89%;
     min-width: 994px;
-    width: 88.5%;
-    background-color: transparent;
+    background-color: #EFEFEF;
     border-top: 80px solid #EFEFEF;
-    border-bottom: 80px solid #EFEFEF;
-    border-left: 300px solid #EFEFEF;
-    border-right: 300px solid #EFEFEF;
+    border-left: 80px solid #EFEFEF;
+    border-right: 80px solid #EFEFEF;
 
     &__intro {
         display: flex;
         place-self: center;
         width: 100%;
-        z-index: 1px;
 
         &__details {
             display: flex;
@@ -81,9 +80,10 @@
 
     &__contact {
         display: flex;
+        place-self: center;
         padding-right: 80px;
         padding-left: 80px;
-        width: 89%;
+        width: 100%;
         background-color: #EFEFEF;
 
         &__img {

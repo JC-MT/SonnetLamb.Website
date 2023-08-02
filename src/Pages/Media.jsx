@@ -7,7 +7,7 @@ export default function Media(){
     height: '580',
     width: '1100',
     playerVars: {
-      autoplay: 1,
+      autoplay: 0,
       start: 3,
       end: 0
     }

@@ -24,7 +24,6 @@ header {
   align-items: center;
   height: 100%;
   transform-style: preserve-3d;
-  z-index: -2px;
   overscroll-behavior-y: none;
 
 }
@@ -36,12 +35,12 @@ header {
   width: 100%;
   position: absolute;
   background-size: auto 100%;
-  transform: scale(.935);
+  transform: scale(.94);
   background-position: 94% -100%;
   background-attachment: fixed;
   object-fit: cover;
   z-index: -1;
-  transition: 0 linear;
+  will-change: auto;
 
   image-rendering: auto;
   image-rendering: crisp-edges;
