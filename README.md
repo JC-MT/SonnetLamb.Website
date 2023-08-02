@@ -1,8 +1,8 @@
-# React + Vite
+# Sonnet Lamb Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#### Currently working on replicating my wife's Wix website from scratch. Below you'll find my live deployment and the Wix comparison. The goal is to make it identical, so we no longer have to pay the monthly fee. 
 
-Currently, two official plugins are available:
+- Current project hours worked: ~ 24 hours
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### [Live Website](https://sonnetlamb.netlify.app/)
+#### [Wix Website](https://www.sonnetlamb.com/)
